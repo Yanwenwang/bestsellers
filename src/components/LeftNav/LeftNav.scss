@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.left-nav__container {
+    width: 150px;
+    margin-right: 15px;
+    border-right: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+}
