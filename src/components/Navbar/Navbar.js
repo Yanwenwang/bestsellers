@@ -9,7 +9,7 @@ export const Navbar = () => {
     return (
         <div className="nav__outer-container">
             <Container>
-                <nav className="nav-container d-flex">
+                <nav className="nav__container d-flex">
                     <Link className="nav__logo text-primary" to="/">The New York Times</Link>
                 </nav>
             </Container>
