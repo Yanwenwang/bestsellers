@@ -7,28 +7,13 @@
 .nav-container {
     height: 115px;
     line-height: 115px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .nav__logo {
     text-decoration: none;
 
     transition: .2s ease-out;
-
-    &:hover,
-    &:focus {
-        color: $tango;
-    }
-}
-
-.nav__group {
-    list-style-type: none;
-}
-
-.nav__item {
-    text-decoration: none;
-
-    transition: .2s ease-in;
 
     &:hover,
     &:focus {
