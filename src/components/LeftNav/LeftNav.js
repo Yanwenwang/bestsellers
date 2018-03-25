@@ -3,18 +3,22 @@ import { Link } from 'react-router-dom';
 
 import './LeftNav.scss';
 
-export const LeftNav = ({ filters }) => {
+export const LeftNav = ({ filters, activeFilter }) => {
 
     const LinksComponent = filters.map((filter, index) => {
-        const { url, displayName } = filter;
+        const { id, url, displayName } = filter;
+        const className = activeFilter === id 
+            ? 'left-nav__link left-nav__link--active'
+            : 'left-nav__link';
 
         return (
-            <Link key={index} to={url}>{displayName}</Link>
+            <Link className={className} key={index} to={url}>{displayName}</Link>
         );
     });
 
     return (
         <nav className="left-nav__container">
+            <h2 className="left-nav__title">Best Sellers List</h2>
             {LinksComponent}
         </nav>
     );
