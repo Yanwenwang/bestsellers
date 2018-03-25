@@ -5,11 +5,11 @@ import './LeftNav.scss';
 
 export const LeftNav = ({ filters }) => {
 
-    const LinksComponent = filters.map((filter) => {
+    const LinksComponent = filters.map((filter, index) => {
         const { url, displayName } = filter;
 
         return (
-            <Link to={url}>{displayName}</Link>
+            <Link key={index} to={url}>{displayName}</Link>
         );
     });
 

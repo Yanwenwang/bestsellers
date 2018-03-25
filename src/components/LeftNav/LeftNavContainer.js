@@ -3,19 +3,29 @@ import { connect } from 'react-redux';
 import LeftNav from './LeftNav';
 
 const mapStateToProps = (state) => {
-    const { list } = state.list;
+    const { lists } = state.list;
+
+    const mappedList = lists.map((item) => {
+        const { list_name_encoded, display_name } = item;
+
+        const url = `/?queryParam=${list_name_encoded}`;
+
+        return {
+            url,
+            displayName: display_name
+        }
+    });
+
+    const filters = [
+        {
+            url: '/',
+            displayName: 'All'
+        },
+        ...mappedList
+    ]
 
     return {
-        filters: list.map((item) => {
-            const { queryParam, displayName } = item;
-
-            const url = queryParam ? `/?queryParam=${queryParam}` : '/';
-
-            return {
-                url,
-                displayName
-            }
-        })
+        filters
     };
 };
 
