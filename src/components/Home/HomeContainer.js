@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { getList } from '../../actions/list';
+import { getList, getFakeList } from '../../actions/list';
 import queryString from 'query-string';
 
 import Home from './Home';
@@ -22,9 +22,11 @@ const mapStateToProps = (state) => {
 
         const mappedBooks = books.map((book) => {
             const { book_image, author, rank, title, description } = book;
+            const imageAlt = `book cover for ${title}`;
 
             return {
                 imageSrc: book_image,
+                imageAlt,
                 author,
                 rank,
                 title,
@@ -44,7 +46,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = {
-    getList
+    getList: getFakeList
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
