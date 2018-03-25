@@ -1,10 +1,8 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+
+import BookList from '../../components/BookList/BookList';
 
 class Home extends React.Component {
-
-    constructor(props) {
-        super(props);
-    }
 
     componentWillMount() {
         const { getList } = this.props;
@@ -12,18 +10,22 @@ class Home extends React.Component {
     }
 
     render () {
-        const { list } = this.props;
+        const { lists } = this.props;
+        
+        const bookListComponent = lists.map((list, index) => {
+            const { displayName } = list;
+
+            return (
+                <BookList title={displayName} key={index} />
+            );
+        });
 
         return (
             <div>
-                Home
+                {bookListComponent}
             </div>
         );
     }
 }
-
-Home.propTypes = {
-    //list: PropTypes.array.isRequired
-};
 
 export default Home;

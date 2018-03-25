@@ -5,8 +5,8 @@ import LeftNav from './LeftNav';
 const mapStateToProps = (state) => {
     const { lists } = state.list;
 
-    const mappedList = lists.map((item) => {
-        const { list_name_encoded, display_name } = item;
+    const mappedList = lists.map((list) => {
+        const { list_name_encoded, display_name } = list;
 
         const url = `/?queryParam=${list_name_encoded}`;
 
