@@ -8,7 +8,7 @@ const mapStateToProps = (state) => {
     const mappedList = lists.map((list) => {
         const { list_name_encoded, display_name } = list;
 
-        const url = `/?queryParam=${list_name_encoded}`;
+        const url = `/?list=${list_name_encoded}`;
 
         return {
             url,
