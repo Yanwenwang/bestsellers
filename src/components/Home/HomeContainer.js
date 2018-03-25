@@ -24,7 +24,7 @@ const mapStateToProps = (state) => {
             const { book_image, author, rank, title, description } = book;
 
             return {
-                image: book_image,
+                imageSrc: book_image,
                 author,
                 rank,
                 title,

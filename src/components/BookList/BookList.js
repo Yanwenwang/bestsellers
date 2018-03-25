@@ -1,12 +1,12 @@
 import React from 'react';
 
+import Book from '../../components/Book/Book';
+
 export const BookList = ({ title, books }) => {
 
-    const booksComponent = books.map((book) => {
-        const { title } = book;
-
+    const booksComponent = books.map((book, index) => {
         return (
-            <p>{title}</p>
+            <Book key={index} {...book} />
         )
     });
 
