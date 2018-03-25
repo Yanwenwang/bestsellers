@@ -1,0 +1,18 @@
+@import '../../styles/variables';
+
+.book-list__container {
+    padding-top: 32px;
+    padding-left: 32px;
+}
+
+.book-list__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book-list__title {
+    padding: 16px;
+    letter-spacing: 1px;
+    background: $tango;
+    color: $gray-lightest;
+}

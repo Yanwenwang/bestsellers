@@ -2,6 +2,8 @@ import React from 'react';
 
 import BookList from '../../components/BookList/BookList';
 
+import './Home.scss';
+
 class Home extends React.Component {
 
     componentWillMount() {
@@ -21,7 +23,7 @@ class Home extends React.Component {
         });
 
         return (
-            <div>
+            <div className="home__container">
                 {bookListComponent}
             </div>
         );

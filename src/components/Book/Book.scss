@@ -1,0 +1,38 @@
+@import '../../styles/variables';
+
+.book__container {
+    display: flex;
+    flex-direction: column;
+    width: 132px;
+    padding-top: 32px;
+}
+
+.book__rank {
+    margin-bottom: 12px;
+    font-size: 24px;
+    color: $gray;
+}
+
+.book__image {
+    height: 170px;
+    max-width: 132px;
+}
+
+.book__name {
+    color: $gray-dark;
+}
+
+.book__title {
+    margin-top: 12px;
+    color: $gray-dark;
+}
+
+.book__author {
+    margin-top: 12px;
+    font-style: italic;
+}
+
+.book__description {
+    margin-top: 12px;
+    color: $gray;
+}

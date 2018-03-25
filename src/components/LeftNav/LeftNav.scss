@@ -3,7 +3,6 @@
 .left-nav__container {
     min-width: 300px;
     max-width: 300px;
-    margin-right: 32px;
     border-right: 1px solid $gray-dark;;
     padding-top: 32px;
     padding-right: 32px;
@@ -12,7 +11,7 @@
 }
 
 .left-nav__link {
-    margin-bottom: 15px;
+    margin-top: 16px;
     text-decoration: none;
     color: $gray-dark;
     font-size: 18px;
