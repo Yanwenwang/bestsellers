@@ -28,7 +28,7 @@ const mapStateToProps = (state) => {
                 imageSrc: book_image,
                 imageAlt,
                 author,
-                rank,
+                rank: `# ${rank}`,
                 title,
                 description
             };

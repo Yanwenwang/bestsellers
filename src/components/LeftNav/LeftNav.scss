@@ -3,8 +3,8 @@
 .left-nav__container {
     min-width: 300px;
     max-width: 300px;
-    border-right: 1px solid $gray-dark;;
-    padding-top: 32px;
+    border-right: 1px solid $gray-light;
+    margin-top: 32px;
     padding-right: 32px;
     display: flex;
     flex-direction: column;
@@ -24,6 +24,8 @@
 
 .left-nav__link--active {
     color: $tango;
+    border-left: 4px solid $tango;
+    padding-left: 8px;
 }
 
 .left-nav__title {

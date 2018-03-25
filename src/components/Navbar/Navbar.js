@@ -9,8 +9,8 @@ export const Navbar = () => {
     return (
         <div className="nav__outer-container">
             <Container>
-                <nav className="nav__container d-flex">
-                    <Link className="nav__logo text-primary" to="/">The New York Times</Link>
+                <nav className="nav__container">
+                    <h3 className="nav__title">The New York Times Bestsellers</h3>
                 </nav>
             </Container>
         </div>
