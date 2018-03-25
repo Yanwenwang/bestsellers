@@ -1,9 +1,12 @@
 @import '../../styles/variables';
 
 .left-nav__container {
-    min-width: 300px;
-    max-width: 300px;
-    border-right: 1px solid $gray-light;
+    // position sticky does not work in all browsers so some browsers will not see the sticky behavior
+    position: sticky;
+    top: 32px;
+    align-self: flex-start;
+    min-width: 200px;
+    max-width: 200px;
     padding-right: 32px;
     display: flex;
     flex-direction: column;
@@ -13,7 +16,7 @@
     margin-top: 16px;
     text-decoration: none;
     color: $gray-dark;
-    font-size: 18px;
+    font-size: 16px;
     transition: .2s ease;
 
     &:hover {
@@ -29,4 +32,5 @@
 
 .left-nav__title {
     color: $gray-dark;
+    letter-spacing: 1px;
 }

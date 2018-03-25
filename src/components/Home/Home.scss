@@ -1,4 +1,7 @@
+@import '../../styles/variables';
+
 .home__container {
+    border-left: 1px solid $gray-light;
     display: flex;
     flex-direction: column;
     flex-grow: 1;

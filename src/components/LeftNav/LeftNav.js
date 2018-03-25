@@ -18,7 +18,7 @@ export const LeftNav = ({ filters, activeFilter }) => {
 
     return (
         <nav className="left-nav__container">
-            <h2 className="left-nav__title">Bestsellers</h2>
+            <h3 className="left-nav__title">Bestsellers</h3>
             {LinksComponent}
         </nav>
     );
