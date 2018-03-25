@@ -18,10 +18,23 @@ const mapStateToProps = (state) => {
         : lists;
 
     const mappedList = filteredBookList.map((list) => {
-        const { display_name } = list;
+        const { display_name , books } = list;
+
+        const mappedBooks = books.map((book) => {
+            const { book_image, author, rank, title, description } = book;
+
+            return {
+                image: book_image,
+                author,
+                rank,
+                title,
+                description
+            };
+        });
 
         return {
-            displayName: display_name
+            displayName: display_name,
+            books: mappedBooks
         };
     });
 

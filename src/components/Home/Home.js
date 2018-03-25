@@ -13,10 +13,10 @@ class Home extends React.Component {
         const { lists } = this.props;
         
         const bookListComponent = lists.map((list, index) => {
-            const { displayName } = list;
+            const { displayName, books } = list;
 
             return (
-                <BookList title={displayName} key={index} />
+                <BookList title={displayName} books={books} key={index} />
             );
         });
 
