@@ -5,11 +5,9 @@ import Corelayout from './layouts/Corelayout';
 import HomeContainer from './components/Home/HomeContainer';
 
 const App = () => (
-    <main>
-        <Corelayout>
-            <Route exact path="/" component={HomeContainer} />
-        </Corelayout>
-    </main>
+    <Corelayout>
+        <Route exact path="/" component={HomeContainer} />
+    </Corelayout>
 );
 
 export default App;
