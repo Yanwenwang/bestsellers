@@ -6,12 +6,22 @@
     &:not(:first-child) {
         margin-top: 16px;
     }
+
+    /* mobile */
+    @media only screen and (max-width : $screen-md - 1) {
+        padding-left: 0;
+    }
 }
 
 .book-list__wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 16px;
+
+    /* mobile */
+    @media only screen and (max-width : $screen-md - 1) {
+        flex-direction: column;
+    }
 }
 
 .book-list__title {
@@ -19,4 +29,11 @@
     letter-spacing: 1px;
     background: $tango;
     color: $gray-lightest;
+
+    /* mobile */
+    @media only screen and (max-width : $screen-md - 1) {
+        // position sticky does not work in all browsers so some browsers will not see the sticky behavior
+        position: sticky;
+        top: -1px;
+    }
 }

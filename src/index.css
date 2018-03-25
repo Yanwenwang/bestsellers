@@ -1,25 +1,5 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-
-/* Sticky footer starts */
-html, body, #root {
-    height: 100%;
     margin: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
-.wrapper {
-    min-height: 100%;
-
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
-    margin-bottom: -115px;
-}
-footer,
-.push {
-    height: 115px;
-}
-
-/* Sticky footer ends */

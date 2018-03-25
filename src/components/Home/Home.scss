@@ -5,4 +5,9 @@
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+
+    /* mobile */
+    @media only screen and (max-width : $screen-md - 1) {
+        border: none;
+    }
 }

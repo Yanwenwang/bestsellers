@@ -1,0 +1,30 @@
+@import './variables';
+
+/* Sticky footer starts */
+html, body, #root {
+    height: 100%;
+    margin: 0;
+}
+.wrapper {
+    min-height: 100%;
+
+    /* Equal to height of footer */
+    /* But also accounting for potential margin-bottom of last child */
+    margin-bottom: -115px;
+
+    /* mobile */
+    @media only screen and (max-width : $screen-md - 1) {
+        margin-bottom: -64px;
+    }
+}
+footer,
+.push {
+    height: 115px;
+
+    /* mobile */
+    @media only screen and (max-width : $screen-md - 1) {
+        height: 64px;
+    }
+}
+
+/* Sticky footer ends */

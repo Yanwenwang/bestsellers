@@ -10,6 +10,11 @@
     padding-right: 32px;
     display: flex;
     flex-direction: column;
+
+    /* mobile */
+    @media only screen and (max-width : $screen-md - 1) {
+        display: none;
+    }
 }
 
 .left-nav__link {

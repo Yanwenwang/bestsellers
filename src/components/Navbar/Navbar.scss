@@ -10,10 +10,21 @@
     height: 115px;
     line-height: 115px;
     justify-content: center;
+
+    /* mobile */
+    @media only screen and (max-width : $screen-md - 1) {
+        height: 64px;
+        line-height: 64px;
+    }
 }
 
 .nav__title {
     font-size: 32px;
     letter-spacing: 1.5px;
-    color: $gray-dark
+    color: $gray-dark;
+
+    /* mobile */
+    @media only screen and (max-width : $screen-md - 1) {
+        font-size: 18px;
+    }
 }
