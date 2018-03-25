@@ -14,7 +14,7 @@ export const Corelayout = ({ children }) => {
             <div className="wrapper">
                 <Navbar />
                 <Container>
-                    <div className="d-flex">
+                    <div className="corelayout__container">
                         <LeftNavContainer /> 
                         {children} 
                     </div>

@@ -1,13 +1,17 @@
 @import '../../styles/variables';
 
 .book-list__container {
-    padding-top: 32px;
     padding-left: 32px;
+
+    &:not(:first-child) {
+        margin-top: 16px;
+    }
 }
 
 .book-list__wrapper {
     display: flex;
     justify-content: space-between;
+    padding-top: 16px;
 }
 
 .book-list__title {
