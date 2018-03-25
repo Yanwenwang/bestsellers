@@ -2,19 +2,20 @@ import { connect } from 'react-redux';
 
 import LeftNav from './LeftNav';
 
-const mapStateToProps = () => {
+const mapStateToProps = (state) => {
+    const { list } = state.list;
 
     return {
-        filters: [
-            {
-                url: '/',
-                display: 'All'
-            },
-            {
-                url: '/?list=fiction',
-                display: 'Fiction'
+        filters: list.map((item) => {
+            const { queryParam, displayName } = item;
+
+            const url = queryParam ? `/?queryParam=${queryParam}` : '/';
+
+            return {
+                url,
+                displayName
             }
-       ]
+        })
     };
 };
 

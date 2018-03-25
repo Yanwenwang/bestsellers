@@ -6,10 +6,10 @@ import './LeftNav.scss';
 export const LeftNav = ({ filters }) => {
 
     const LinksComponent = filters.map((filter) => {
-        const { url, display } = filter;
+        const { url, displayName } = filter;
 
         return (
-            <Link to={url}>{display}</Link>
+            <Link to={url}>{displayName}</Link>
         );
     });
 
