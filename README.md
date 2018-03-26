@@ -8,9 +8,3 @@
 
 ## Desktop
 ![Desktop](bestseller-desktop.png)
-
-## Mobile
-![Mobile](bestseller-mobile.png)
-
-## Mobile Nav
-![Mobile Nav](bestseller-mobile-nav.png)
