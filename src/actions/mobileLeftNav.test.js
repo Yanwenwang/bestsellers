@@ -1,7 +1,7 @@
 import { toggleLeftNav } from './mobileLeftNav';
 import actionTypes from '../constants/actionTypes';
 
-describe('mobileLeftNav', () => {
+describe('mobileLeftNav (action)', () => {
 
     describe('toggleLeftNav', () => {
         it('should dispatch correct action when isLeftNavOpen is true', () => {

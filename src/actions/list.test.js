@@ -4,7 +4,7 @@ import { fakeData } from '../constants/fakeData';
 import bestSellersApi from '../utils/api/bestSellers';
 
 
-describe('list', () => {
+describe('list (action)', () => {
     
     describe('getList', () => {
         it('should dispatch correct actions on API call success', async () => {
