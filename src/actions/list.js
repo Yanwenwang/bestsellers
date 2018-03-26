@@ -8,7 +8,7 @@ export const getList = () => {
             type: actionTypes.LIST.GET.CALL
         });
 
-        bestSellersApi.getBestSellers()
+        return bestSellersApi.getBestSellers()
             .then((response) => {
                 return response.json();
             })
@@ -31,18 +31,12 @@ export const getFakeList = () => {
     return (dispatch) => {
         const promise = Promise.resolve(fakeData);
 
-        promise
+        return promise
             .then((data) => {
                 dispatch({
                     type: actionTypes.LIST.GET.SUCCESS,
                     payload: data
                 });  
-            })
-            .catch((error) => {
-                dispatch({
-                    type: actionTypes.LIST.GET.FAIL,
-                    payload: error
-                });    
             });
     }
 };
