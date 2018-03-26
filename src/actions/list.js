@@ -23,9 +23,16 @@ export const getList = () => {
                     type: actionTypes.LIST.GET.FAIL,
                     payload: error
                 });    
+
+                // if there is an error just use fake data for now
+                // can add error states later
+                dispatch({
+                    type: actionTypes.LIST.GET.SUCCESS,
+                    payload: fakeData
+                });
             });
    };
-}
+};
 
 export const getFakeList = () => {
     return (dispatch) => {
