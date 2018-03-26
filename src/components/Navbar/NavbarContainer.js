@@ -1,5 +1,4 @@
 import { connect } from 'react-redux';
-import queryString from 'query-string';
 
 import { toggleLeftNav } from '../../actions/mobileLeftNav';
 import Navbar from './Navbar';

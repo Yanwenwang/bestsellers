@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { getList, getFakeList } from '../../actions/list';
+import { getFakeList } from '../../actions/list';
 import queryString from 'query-string';
 
 import Home from './Home';
