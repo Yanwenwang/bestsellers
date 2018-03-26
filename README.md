@@ -7,8 +7,11 @@
 * Testing was done using Jest and Enzyme
 
 `yarn install` to install dependencies
+
 `yarn start` to run app in development mode
+
 `yarn test` to run tests
+
 `yarn build` to generate prod build
 
 ## Desktop
