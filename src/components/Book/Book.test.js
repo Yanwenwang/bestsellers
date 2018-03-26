@@ -30,7 +30,7 @@ describe('<Book />', () => {
         expect(wrapper.find('.book__title').text()).toBe(props.title);
 
         expect(wrapper.find('.book__author').length).toBe(1);
-        expect(wrapper.find('.book__author').text()).toBe(props.author);
+        expect(wrapper.find('.book__author').text()).toBe(`by ${props.author}`);
 
         expect(wrapper.find('.book__description').length).toBe(1);
         expect(wrapper.find('.book__description').text()).toBe(props.description);

@@ -42,14 +42,17 @@
 .book__title {
     margin-top: 12px;
     color: $gray-dark;
+    font-size: 14px;
 }
 
 .book__author {
     margin-top: 12px;
-    font-style: italic;
+    font-size: 14px;
+    color: $gray-dark;
 }
 
 .book__description {
     margin-top: 12px;
     color: $gray;
+    font-size: 14px;
 }
