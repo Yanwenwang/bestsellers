@@ -2,7 +2,7 @@ import React from 'react';
 
 import './Book.scss';
 
-export const Book = ({ imageSrc, imageAlt, author, rank, title, description  }) => {
+export const Book = ({ imageSrc, imageAlt, author, rank, title, description }) => {
 
     const bookDescription = description 
         ? <p className="book__description">{description}</p>
