@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Loader from '../../components/Loader/Loader';
 import BookList from '../../components/BookList/BookList';
 
 import './Home.scss';
@@ -12,15 +13,17 @@ class Home extends React.Component {
     }
 
     render () {
-        const { lists } = this.props;
+        const { lists, isLoading } = this.props;
         
-        const bookListComponent = lists.map((list, index) => {
-            const { displayName, books } = list;
+        const bookListComponent = isLoading 
+            ? <Loader />
+            : lists.map((list, index) => {
+                const { displayName, books } = list;
 
-            return (
-                <BookList title={displayName} books={books} key={index} />
-            );
-        });
+                return (
+                    <BookList title={displayName} books={books} key={index} />
+                );
+            });
 
         return (
             <div className="home__container">

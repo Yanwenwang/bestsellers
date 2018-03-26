@@ -6,7 +6,7 @@ import queryString from 'query-string';
 import Home from './Home';
 
 const mapStateToProps = (state) => {
-    const { lists } = state.list;
+    const { lists, isLoading } = state.list;
     const { search } = state.routing.location;
 
     const queryParams = queryString.parse(search);
@@ -41,6 +41,7 @@ const mapStateToProps = (state) => {
     });
 
     return {
+        isLoading,
         lists: mappedList
     };
 };
