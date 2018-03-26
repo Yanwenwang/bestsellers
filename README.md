@@ -15,4 +15,4 @@
 `yarn build` to generate prod build
 
 ## Desktop
-![Desktop](bestseller-desktop.png)
+![Desktop](bestseller-desktop.jpg)
