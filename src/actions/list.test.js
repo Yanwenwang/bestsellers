@@ -75,7 +75,7 @@ describe('list', () => {
             expect(mockDispatch.mock.calls[0][0]).toEqual({
                 type: actionTypes.LIST.GET.SUCCESS,
                 payload: fakeData
-            })
+            });
         });
     });
 });
