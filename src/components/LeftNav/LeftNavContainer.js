@@ -1,11 +1,13 @@
 import { connect } from 'react-redux';
 import queryString from 'query-string';
 
+import { toggleLeftNav } from '../../actions/mobileLeftNav';
 import LeftNav from './LeftNav';
 
 const mapStateToProps = (state) => {
     const { lists } = state.list;
     const { search } = state.routing.location;
+    const { isLeftNavOpen } = state.mobileLeftNav;
 
     const queryParams = queryString.parse(search);
 
@@ -31,8 +33,13 @@ const mapStateToProps = (state) => {
 
     return {
         filters,
-        activeFilter: queryParams.list
+        activeFilter: queryParams.list,
+        isLeftNavOpen
     };
 };
 
-export default connect(mapStateToProps, null)(LeftNav);
+const mapDispatchToProps = {
+    toggleLeftNav
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(LeftNav);

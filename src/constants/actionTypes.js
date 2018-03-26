@@ -5,7 +5,13 @@ const actionTypes = {
             SUCCESS: 'LIST.GET.SUCCESS',
             FAIL: 'LIST.GET.FAIL'
         }
-    }    
+    },
+    MOBILELEFTNAV: {
+        TOGGLE: 'MOBILELEFTNAV.TOGGLE'
+    },
+    ROUTER: {
+        LOCATION_CHANGE: '@@router/LOCATION_CHANGE'
+    }
 };
 
 export default actionTypes;

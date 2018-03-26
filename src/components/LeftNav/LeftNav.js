@@ -3,7 +3,11 @@ import { Link } from 'react-router-dom';
 
 import './LeftNav.scss';
 
-export const LeftNav = ({ filters, activeFilter }) => {
+export const LeftNav = ({ filters, activeFilter, isLeftNavOpen, toggleLeftNav }) => {
+
+    const leftNavClassName = isLeftNavOpen 
+        ? 'left-nav__container left-nav__container--open'
+        : 'left-nav__container';
 
     const LinksComponent = filters.map((filter, index) => {
         const { id, url, displayName } = filter;
@@ -17,9 +21,14 @@ export const LeftNav = ({ filters, activeFilter }) => {
     });
 
     return (
-        <nav className="left-nav__container">
-            <h3 className="left-nav__title">Bestsellers</h3>
-            {LinksComponent}
+        <nav className={leftNavClassName}>
+            <div className="left-nav__wrapper">
+                <div className="left-nav__title-container">
+                    <h3 className="left-nav__title">Bestsellers</h3>
+                    <i className="left-nav__close fa fa-times" aria-hidden="true" onClick={toggleLeftNav}></i>
+                </div>
+                {LinksComponent}
+            </div>
         </nav>
     );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Navbar from '../../components/Navbar/Navbar';
+import NavbarContainer from '../../components/Navbar/NavbarContainer';
 import LeftNavContainer from '../../components/LeftNav/LeftNavContainer';
 import Footer from '../../components/Footer/Footer';
 import { Container } from '../../components/Shared';
@@ -12,7 +12,7 @@ export const Corelayout = ({ children }) => {
     return (
         <React.Fragment>
             <div className="wrapper">
-                <Navbar />
+                <NavbarContainer />
                 <Container>
                     <div className="corelayout__container">
                         <LeftNavContainer /> 
