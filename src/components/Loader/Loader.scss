@@ -1,0 +1,16 @@
+@import '../../styles/variables';
+
+.loader__container {
+    position: relative;
+    height: 200px;
+}
+
+.loader__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    font-size: 50px;
+    color: $gray;
+}
