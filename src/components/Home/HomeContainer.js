@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { getFakeList } from '../../actions/list';
+import { getList } from '../../actions/list';
 import queryString from 'query-string';
 
 import Home from './Home';
@@ -47,7 +47,7 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = {
-    getList: getFakeList
+    getList
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
