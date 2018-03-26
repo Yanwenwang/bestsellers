@@ -3,7 +3,7 @@ import { shallow } from 'enzyme';
 
 import Home from './Home';
 import BookList from '../../components/BookList/BookList';
-import Loader from '../../components/Loader/Loader';
+import { Loader } from '../Shared';
 
 describe('<Home />', () => {
     it('it renders correctly', () => {

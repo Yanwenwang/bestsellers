@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Loader from '../../components/Loader/Loader';
+import { Loader } from '../Shared';
 import BookList from '../../components/BookList/BookList';
 
 import './Home.scss';
