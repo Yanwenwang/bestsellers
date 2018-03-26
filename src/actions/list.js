@@ -29,6 +29,10 @@ export const getList = () => {
 
 export const getFakeList = () => {
     return (dispatch) => {
+        dispatch({
+            type: actionTypes.LIST.GET.CALL
+        });
+        
         const promise = Promise.resolve(fakeData);
 
         return promise
@@ -36,7 +40,7 @@ export const getFakeList = () => {
                 dispatch({
                     type: actionTypes.LIST.GET.SUCCESS,
                     payload: data
-                });  
+                });
             });
     }
 };

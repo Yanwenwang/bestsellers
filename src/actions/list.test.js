@@ -70,9 +70,13 @@ describe('list (action)', () => {
             await getFakeList()(mockDispatch);
 
             // assert
-            expect(mockDispatch.mock.calls.length).toBe(1);
+            expect(mockDispatch.mock.calls.length).toBe(2);
 
             expect(mockDispatch.mock.calls[0][0]).toEqual({
+                type: actionTypes.LIST.GET.CALL
+            });
+
+            expect(mockDispatch.mock.calls[1][0]).toEqual({
                 type: actionTypes.LIST.GET.SUCCESS,
                 payload: fakeData
             });
