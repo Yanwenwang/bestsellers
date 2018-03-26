@@ -7,10 +7,10 @@
 * Testing was done using Jest and Enzyme
 
 Desktop
-![Desktop](bestseller-desktop)
+![Desktop](bestseller-desktop.png)
 
 Mobile
-![Mobile](bestseller-mobile)
+![Mobile](bestseller-mobile.png)
 
 Mobile Nav
-![Mobile Nav](bestseller-mobile-nav)
+![Mobile Nav](bestseller-mobile-nav.png)
